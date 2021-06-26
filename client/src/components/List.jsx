@@ -1,6 +1,6 @@
 import Health from "./Health"
 
-const List = ({ health, edit_item, delete_item }) => {
+const List = ({ health, delete_item }) => {
 
     return (
         <div className='container' style={{margin: '5rem'}}>
@@ -17,8 +17,8 @@ const List = ({ health, edit_item, delete_item }) => {
                 </thead>
                 <tbody>
                     {
-                        health.map(item => {
-                            return <Health key={item._id} item={item} edit_item={edit_item} delete_item={delete_item}/>
+                        health?.map(item => {
+                            return <Health key={item._id} item={item} delete_item={delete_item}/>
                         })
                     }
                 </tbody>

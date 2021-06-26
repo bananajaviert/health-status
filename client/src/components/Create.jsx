@@ -29,7 +29,7 @@ const Create = ({ add_new, fullname, set_fullname, temperature, set_temperature,
 
             <form action="" onSubmit={submit_form}>
                 <div className="form-group">
-                    {/* <label htmlFor="">Full name</label> */}
+                    <label htmlFor="">Full name</label>
                     <input 
                     value={fullname} 
                     onChange={e => set_fullname(e.target.value)} 
@@ -37,7 +37,7 @@ const Create = ({ add_new, fullname, set_fullname, temperature, set_temperature,
                     placeholder='Full Name'/>
                 </div>
                 <div className="form-group">
-                    {/* <label htmlFor="">Temperature (C&deg;)</label> */}
+                    <label htmlFor="">Temperature (C&deg;)</label>
                     <input 
                     value={temperature} 
                     onChange={e => set_temperature(e.target.value)} 
@@ -46,7 +46,7 @@ const Create = ({ add_new, fullname, set_fullname, temperature, set_temperature,
                     placeholder='Temperature in (C&deg;)'/>
                 </div>
                 <div className="form-group">
-                    {/* <label htmlFor="">Email</label> */}
+                    <label htmlFor="">Email</label>
                     <input 
                     value={email} 
                     onChange={e => set_email(e.target.value)} 
@@ -54,7 +54,7 @@ const Create = ({ add_new, fullname, set_fullname, temperature, set_temperature,
                     placeholder='Email Address'/>
                 </div>
                 <div className="form-group">
-                    {/* <label htmlFor="">Phone Number (09 or +63)</label> */}
+                    <label htmlFor="">Phone Number (09 or +63)</label>
                     <input 
                     value={phone_number} 
                     onChange={e => set_phone_number(e.target.value)} 
@@ -62,7 +62,7 @@ const Create = ({ add_new, fullname, set_fullname, temperature, set_temperature,
                     placeholder='Phone Number (09 or +63)'/>
                 </div>
 
-                <button type="submit" className='btn btn-primary'>Add</button>
+                <button type="submit" className='btn btn-primary'>Submit</button>
             </form>
 
         </div>
